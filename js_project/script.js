@@ -36,8 +36,9 @@ box.addEventListener("click", () => {
   if (lastbest == 0) lastbest = speed; //checks if its the first time ,if yes set currecnt speed as best speed
   if (speed <= lastbest) {
     let b = document.getElementById("best");
-    b.innerHTML = "Fastest" + speed;
+    b.innerHTML = "Fastest :" + speed;
     lastbest = speed;
   }
   moveBox(); //move the box to new position
 });
+
