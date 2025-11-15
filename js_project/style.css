@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(223, 183, 233);
+}
+.header {
+  text-align: center;
+}
+
+.shape {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  background-color: coral;
+}
