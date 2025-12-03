@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <h1 id="msg">Hello</h1>
+    </div>
+    <div class="boxes">
+      <div id="box1" class="box">Red</div>
+      <div id="box2" class="box">Blue</div>
+      <div id="box3" class="box">Green</div>
+      <div id="box4" class="box">Yellow</div>
+    </div>
+    <div class="name">
+      <input
+        type="text"
+        name="name"
+        id="username"
+        placeholder="Enter Your Name"
+      />
+      <input type="button" value="Greet" id="greet" />
+    </div>
+    <script>
+      uname = document.getElementById("username");
+      text = document.getElementById("msg");
+      btn = document.getElementById("greet");
+      btn.addEventListener("click", () => {
+        text.innerText = "Hello, " + uname.value;
+      });
+      b1 = document.getElementById("box1");
+      b2 = document.getElementById("box2");
+      b3 = document.getElementById("box3");
+      b4 = document.getElementById("box4");
+      b1.addEventListener("click", () => {
+        b1.style.backgroundColor = "red";
+      });
+      b2.addEventListener("click", () => {
+        b2.style.backgroundColor = "blue";
+      });
+      b3.addEventListener("click", () => {
+        b3.style.backgroundColor = "green";
+      });
+      b4.addEventListener("click", () => {
+        b4.style.backgroundColor = "yellow";
+      });
+    </script>
+  </body>
+</html>
