@@ -30,8 +30,13 @@
       text = document.getElementById("msg");
       btn = document.getElementById("greet");
       btn.addEventListener("click", () => {
-        text.innerText = "Hello, " + uname.value;
+        if (uname.value === "") {
+          text.innerText = "Hello";
+        } else {
+          text.innerText = "Hello, " + uname.value;
+        }
       });
+
       b1 = document.getElementById("box1");
       b2 = document.getElementById("box2");
       b3 = document.getElementById("box3");

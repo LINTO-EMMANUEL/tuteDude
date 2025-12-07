@@ -4,8 +4,10 @@ body {
 }
 .nav h1 {
   margin: 0;
+  font-family: sans-serif;
   padding: 15px;
-  font-weight: 500;
+  font-size: 27px;
+  font-weight: 100;
 }
 .nav {
   background-color: rgb(205, 205, 205);
